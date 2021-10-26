@@ -1,9 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #726dfe;
+  --tertiary: #fafafa;
+}
+
+* {
+  font-family: Quicksand !important;
+  scrollbar-width: thin;
+  scrollbar-color: var(--primary) var(--tertiary);
+}
+
+*::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--tertiary);
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--primary);
+}
+
 .shadow {
   box-shadow: 0 2px 15px rgb(0 0 0 / 68%);
 }
 
+/* Auth Page Styles */
+.background {
+  background: linear-gradient(150deg, #d9dbe2, #808aac 100%, #282d39 0);
+}
+
+.auth-container {
+  /* background-color: #4a5162; */
+  /* box-shadow: 0 2px 15px rgb(0 0 0 / 68%); */
+}
+
+.auth-form {
+  padding-top: 33px;
+  width: 60%;
+  margin-left: 20%;
+}
+
+.auth-title {
+  padding-bottom: 20px;
+  width: 100%;
+  text-align: center;
+  color: #4a5162;
+  font-size: 26px;
+}
+
+.text-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 24px;
+  /* background-color: #4a5162; */
+  outline: none;
+  border-width: 0px;
+  border-bottom: 2px solid #726dfe;
+  color: #4a5162;
+}
+
+.text-input::placeholder {
+  /* color: hsla(0, 0%, 100%, 0.568); */
+  color: #4a5162;
+}
+
+.submit-button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 4px;
+  border-width: 0px;
+  cursor: pointer;
+  background-color: #726dfe;
+  color: white;
+  outline: none;
+}
+
+.submit-button::hover {
+  background-color: #938ffe;
+}
+
+#ce-ice-breaker-gif {
+  max-width: 115px !important;
+  margin-top: 30px !important;
+}
+
+#ce-send-message-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ce-chat-card {
+  width: 300px !important;
+  margin-left: 10px;
+}
+.ce-social-message-form {
+  border-top: 1px solid rgba(0, 0, 0, 0.5) !important;
+}
+
+.ce-message-input-form {
+  padding-bottom: 10px !important;
+}
+
+#msg-textarea {
+  width: calc(100% - 140px) !important;
+  position: relative !important;
+  top: 4px !important;
+  border-width: 0px !important;
+  color: #4a5162 !important;
+}
+#msg-textarea::placeholder {
+  color: #4a5162;
+}
+
 /* Chat List */
-.ce-wrapper {
+/* .ce-wrapper {
   background-color: #4a5162 !important;
 }
 
@@ -39,11 +157,11 @@
 
 .ce-chat-unread-dot {
   background-color: white !important;
-}
+} */
 
 /* Chat Feed */
 
-.ce-chat-title-container {
+/* .ce-chat-title-container {
   background-color: #4a5162 !important;
   border-radius: 0px !important;
 }
@@ -124,11 +242,11 @@
 .ce-their-message-bubble {
   background-color: #535a6d !important;
   color: rgba(255, 255, 255, 0.705) !important;
-}
+} */
 
 /* Chat Settings */
 
-.ce-settings {
+/* .ce-settings {
   background-color: #4a5162 !important;
   border-radius: 0px !important;
 }
@@ -161,4 +279,4 @@
 .ce-autocomplete-close {
   background-color: white !important;
   border-radius: 0px !important;
-}
+} */
